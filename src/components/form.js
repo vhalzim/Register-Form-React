@@ -55,11 +55,11 @@ function handleDayChange(year){
   setSelectedDay(year)
 }
 
-//the glass efect is not fully achieved
+//
 
 return (
-<div>
-  <form id="my-form" onSubmit={handleSubmit(onSubmit)} className="px-1 lg:p-8 rounded-lg h-fit md:w-4/5 lg:w-11/12 bg-[rgba(255,255,255,0.1)] backdrop-blur-xl">
+
+  <form id="my-form" onSubmit={handleSubmit(onSubmit)} className="px-1 lg:p-8 rounded-lg h-fit md:w-4/5 lg:w-10/12 bg-[rgba(255,255,255,0.1)] backdrop-blur-xl">
     <div className="grid grid-cols-2 gap-1 gap-y-3 sm:gap-y-4 lg:grid-cols-4 lg:gap-8 my-8 pt-4 pb-2 lg:px-2 rounded-lg">
       <label>
         <input className={errors?.personal?.firstName && "error-input"} type="text" placeholder="..." {...register("personal.firstName", {required: {value:true, message:"this field is required"}})}/>
@@ -158,7 +158,7 @@ return (
   </form>
 
   
-</div>
+
 )
  
 }

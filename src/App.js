@@ -43,7 +43,7 @@ const [logEror, setLogError] = useState (false)
 
 return (
 
-<div className="h-screen w-screen flex items-center justify-center px-1 bg-gradient-to-r from-black to-slate-800 flex-col">
+<div className="h-screen w-screen flex items-center justify-center  bg-gradient-to-r from-black to-slate-800 flex-col">
 
 
   <Router>
