@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Register-Form-React/static/css/main.ef71a75d.css",
-    "main.js": "/Register-Form-React/static/js/main.f9adf2f4.js",
+    "main.css": "/Register-Form-React/static/css/main.62ee223a.css",
+    "main.js": "/Register-Form-React/static/js/main.0f9f3f0d.js",
     "static/js/787.2681f8ae.chunk.js": "/Register-Form-React/static/js/787.2681f8ae.chunk.js",
     "index.html": "/Register-Form-React/index.html",
-    "main.ef71a75d.css.map": "/Register-Form-React/static/css/main.ef71a75d.css.map",
-    "main.f9adf2f4.js.map": "/Register-Form-React/static/js/main.f9adf2f4.js.map",
+    "main.62ee223a.css.map": "/Register-Form-React/static/css/main.62ee223a.css.map",
+    "main.0f9f3f0d.js.map": "/Register-Form-React/static/js/main.0f9f3f0d.js.map",
     "787.2681f8ae.chunk.js.map": "/Register-Form-React/static/js/787.2681f8ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef71a75d.css",
-    "static/js/main.f9adf2f4.js"
+    "static/css/main.62ee223a.css",
+    "static/js/main.0f9f3f0d.js"
   ]
 }
