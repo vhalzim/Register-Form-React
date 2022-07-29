@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+    color: #999;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+ border-bottom: solid #999;
+ background: transparent;
+ transition: .8s;
+ max-width: 200px;
+ color: white;
 }
+
+@media screen and (max-width:410px){
+    input{
+        max-width: 170px 
+    }
+
+}
+
+@media screen and (max-width:330px){
+    input{
+        max-width: 100px 
+    }
+
+}
+
+
+
+input:focus{
+    outline: none;
+    border-bottom: solid blueviolet;
+}
+
+
+label{
+    position: relative;
+}
+
+ .input-span{
+    position:absolute;
+    z-index: 1;
+    background: transparent;
+    left:0;
+    top:0;
+    transition:.3s;
+  }
+
+  .txt-input:focus ~ .txt-label,
+  .txt-input:not(:placeholder-shown) ~ .txt-label{
+    top:0;
+    font-size:.8em;
+    color:var(--color);
+  }
+  
+  
+input:focus ~ .input-span,
+:not(input:placeholder-shown) ~ .input-span{
+    top:-15px;
+    font-size:.8em;
+    color: blueviolet;
+
+  }
+
+
+input::-webkit-input-placeholder {
+    opacity:0;
+    transition: .8s;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+/* Firefox < 19 */
+input:-moz-placeholder {
+    opacity:0;
+    transition: .8s;
+}
+input:focus:-moz-placeholder {
+    opacity: 1;
+}
+
+/* Firefox > 19 */
+input::-moz-placeholder {
+    opacity:0;
+    transition: .8s;
+}
+input:focus::-moz-placeholder {
+    opacity: 1;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    opacity:0;
+    transition: .8s;
+}
+input:focus:-ms-input-placeholder {
+    opacity: 1;
+}
+
+.error-span{
+   position: relative;
+    font-size:.8em;
+    color: #e22b82;
+}
+
+.error-input{
+    outline: none;
+    border-bottom: solid #e22b82
+}
+
